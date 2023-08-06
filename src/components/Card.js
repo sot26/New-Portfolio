@@ -36,7 +36,7 @@ const Card = (props) => {
           </a>
           <a target="_blank" rel="noreferrer" href={props.demo}>
             <button className="flex justify-center items-center hover:text-[#147EFB]">
-              <p>Life Demo</p> <MdOpenInNew size={30} />
+              <p>View site</p> <MdOpenInNew size={30} />
             </button>
           </a>
         </div>

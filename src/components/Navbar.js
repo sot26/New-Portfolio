@@ -124,16 +124,16 @@ function Navbar() {
         </div>
 
         {/* mobile menu */}
-        <Slide left>
+        <Slide right>
           <div
             className={
               !nav
                 ? "hidden"
-                : "absolute top-0 right-0 z-10  h-[100vh]  flex  shadow-xl shadow-[#354259] w-full"
+                : "absolute top-0 right-0 z-10  h-[100vh]  flex   w-full"
             }
           >
             <div
-              className="w-[55%] bg-opacity-[40%] bg-black"
+              className="w-[55%] bg-opacity-[5%] bg-black"
               onClick={navClick}
             ></div>
             <ul className="w-[45%] pl-8 py-10 bg-white">
