@@ -58,7 +58,7 @@ const Portfolio = () => {
               tool3CN="py-3 auto flex justify-center items-center shadow-xl px-3"
               tool3="Stripe"
               code="https://github.com/sot26/E-commerce"
-              demo=""
+              demo="https://sotshop.netlify.app/"
             />
           </div>
         </div>

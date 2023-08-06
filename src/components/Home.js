@@ -30,13 +30,29 @@ const Home = () => {
               based in Lagos, Nigeria. 📍
             </p>
             <div className="text-[30px] flex gap-[12px] justify-center lg:justify-normal">
-              <BsLinkedin />
-              <BsGithub />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/oluwatobi-omotosho-854804145/"
+              >
+                <BsLinkedin className="hover:text-[#0072b1]" />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/sot26"
+              >
+                <BsGithub
+                  size={30}
+                  className="hover:text-white hover:bg-black rounded-full"
+                />
+              </a>
             </div>
           </div>
           <div className=" flex justify-center lg:justify-normal">
             <img
               src={me}
+              alt="my-pic"
               className="rounded-full h-[300px] w-auto md:h-full my-4 md:my-0"
             />
           </div>
