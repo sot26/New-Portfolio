@@ -1,7 +1,7 @@
 import React from "react";
-import netflix from "../asset/netflix.jpeg";
-import crypto from "../asset/crypto.jpeg";
-import commerce from "../asset/commerce.jpeg";
+import netflix from "../asset/netflix.jpg";
+import crypto from "../asset/crypto.jpg";
+import commerce from "../asset/commerce.jpg";
 import Card from "./Card";
 
 const Portfolio = () => {
