@@ -5,8 +5,9 @@ import { MdOpenInNew } from "react-icons/md";
 const Card = (props) => {
   return (
     <div className={props.className}>
-      <div className="image-wrap md:w-[530px] md:h-[340px] w-auto h-[200px] xxs:h-[250px] sm:h-[300px] rounded-2xl">
-        <img src={props.img} />
+      <div className="image-wrap md:w-[530px] md:h-[340px] w-auto h-[350px] rounded-2xl">
+        <img src={props.imgW} alt="site preview" className="hidden sm:block" />
+        <img src={props.imgM} alt="site preview" className="block sm:hidden" />
       </div>
       <div className=" w-[250px] xxs:w-[300px] md:max-w-[530px]">
         <p className="mt-[15px] mb-[20px] text-[17px] font-bold text-center">

@@ -2,6 +2,9 @@ import React from "react";
 import netflix from "../asset/netflix.jpg";
 import crypto from "../asset/crypto.jpg";
 import commerce from "../asset/commerce.jpg";
+import netflixM from "../asset/netflixM.jpg";
+import cryptoM from "../asset/cryptoM.jpg";
+import commerceM from "../asset/commerceM.jpg";
 import Card from "./Card";
 
 const Portfolio = () => {
@@ -23,7 +26,8 @@ const Portfolio = () => {
           <div className="w-full flex flex-col justify-center items-center gap-[30px] md:gap-[50px]">
             <Card
               className="flex md:p-5 p-2 flex-col lg:flex-row md:gap-[80px] gap-[30px] sm:gap-[45px]  bg-white rounded-2xl"
-              img={netflix}
+              imgW={netflix}
+              imgM={netflixM}
               name="Netflix Clone 🎥"
               desc="The Netflix Clone App is a web application designed to replicate the functionalities and features of the popular streaming platform, Netflix."
               tool="React"
@@ -35,7 +39,8 @@ const Portfolio = () => {
             />
             <Card
               className="flex md:p-5 p-2 lg:flex-row-reverse flex-col md:gap-[80px] gap-[30px] sm:gap-[45px]  bg-white rounded-2xl"
-              img={crypto}
+              imgW={crypto}
+              imgM={cryptoM}
               name="Crypto Price Tracker 🪙 "
               desc="The crypto price tracker is a tool designed to monitor and track the prices of various cryptocurrencies in real-time."
               tool="React"
@@ -48,7 +53,8 @@ const Portfolio = () => {
             />
             <Card
               className="flex md:p-5 p-2 md:gap-[80px] gap-[30px] sm:gap-[45px] flex-col lg:flex-row  bg-white rounded-2xl"
-              img={commerce}
+              imgW={commerce}
+              imgM={commerceM}
               name="E-Commerce Website 🛒 "
               desc="The E-Commerce website serves as a virtual storefront, allowing users to browse and purchase items conveniently from the comfort of their own homes"
               //   tool="React"
