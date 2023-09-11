@@ -96,7 +96,7 @@ function Navbar() {
                 duration={500}
                 className="flex items-center justify-center"
               >
-                <p className="pl-2">Projetcs</p>
+                <p className="pl-2">Projects</p>
               </Link>
             </li>
             <li className="px-3 cursor-pointer text-[17px] font-semibold hover:scale-110 duration-500 hover:text-[#147EFB] ">
