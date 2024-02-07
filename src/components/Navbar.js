@@ -108,7 +108,7 @@ function Navbar() {
                 smooth={true}
                 duration={500}
               >
-                <span className="cursor-pointer"> Projetcs </span>
+                <span className="cursor-pointer"> Projects </span>
               </Link>
             </li>
             <li className="py-6 text-1xl">

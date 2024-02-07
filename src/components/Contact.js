@@ -13,7 +13,7 @@ const Contact = () => {
           CONTACT
         </p>
         <p className="text-[25px] font-bold  text-center md:text-left">
-          Don't be shy! Hit me up! 👇
+          Hit me up! 👇
         </p>
         <div className="flex gap-[30px] md:gap-[70px] flex-col md:flex-row mt-[20px] md:mt-[60px]">
           <div className="flex">
