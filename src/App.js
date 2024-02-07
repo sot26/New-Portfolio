@@ -5,11 +5,13 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
-
+import Headroom from "react-headroom";
 function App() {
   return (
     <div className="">
-      <Navbar />
+      <Headroom>
+        <Navbar />
+      </Headroom>
       <Home />
       <About />
       <Portfolio />

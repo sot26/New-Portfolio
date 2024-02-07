@@ -7,6 +7,9 @@ import css from "../asset/css.png";
 import js from "../asset/js.png";
 import react from "../asset/react.png";
 import tailwind from "../asset/tailwind.png";
+import mongo from "../asset/mongo.png";
+import express from "../asset/express.png";
+import node from "../asset/node.png";
 
 const Home = () => {
   return (
@@ -94,6 +97,24 @@ const Home = () => {
               title="Tailwind"
             >
               <img src={tailwind} className="tailwind" />
+            </div>
+            <div
+              className="w-[65px] h-[65px] rounded-full bg-white shadow-2xl flex items-center justify-center mr-6"
+              title="NODE"
+            >
+              <img src={node} className="tailwind" />
+            </div>
+            <div
+              className="w-[65px] h-[65px] rounded-full bg-white shadow-2xl flex items-center justify-center mr-6"
+              title="Node Express"
+            >
+              <img src={express} className="tailwind" />
+            </div>
+            <div
+              className="w-[65px] h-[65px] rounded-full bg-white shadow-2xl flex items-center justify-center mr-6"
+              title="MongoDB"
+            >
+              <img src={mongo} className="tailwind h-[50px]" />
             </div>
           </div>
         </div>

@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaPhoneAlt, FaTimes } from "react-icons/fa";
-import { MdOutlineDirections } from "react-icons/md";
-import { ImImages } from "react-icons/im";
-// import logo from "../asset/logo.png";
-import Slide from "react-reveal/Slide";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   var [nav, setNav] = useState(false);
@@ -12,49 +8,8 @@ function Navbar() {
     setNav(!nav);
   }
 
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
-        setShow(false);
-      } else {
-        // if scroll up show the navbar
-        setShow(true);
-      }
-
-      // remember current page location to use in the next move
-      setLastScrollY(window.scrollY);
-    }
-  };
-
-  useEffect(() => {
-    if (window.scrollY < 30) {
-      setShow(false);
-    }
-  }, [window.scrollY]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-
-      // cleanup function
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
-
   return (
-    <div
-      className={
-        show
-          ? "fixed h-[80px] pt-2 mb-4 md:pt-[0]  w-full flex justify-between items-center md:px-[50px] px-[20px]  shadow-xl bg-white z-20 transition-all ease-linear duration-100"
-          : "h-[80px] pt-2 mb-4 md:pt-[0]  w-full flex justify-between items-center md:px-[50px] px-[20px]  shadow-xl bg-white z-20 ease-linear duration-100"
-      }
-    >
+    <div className="h-[80px] pt-2 mb-4 md:pt-[0]  w-full flex justify-between items-center md:px-[50px] px-[20px]  shadow-xl bg-white z-20 ease-linear duration-100">
       <header className="flex justify-between w-full skill">
         {/* logo */}
         <div className=" font-bold text-xl sm:text-[20px] logo">
@@ -124,57 +79,50 @@ function Navbar() {
         </div>
 
         {/* mobile menu */}
-        <Slide right>
+        <div
+          className={
+            !nav
+              ? "hidden"
+              : "absolute top-0 right-0 z-10  h-[100vh]  flex   w-full"
+          }
+        >
           <div
-            className={
-              !nav
-                ? "hidden"
-                : "absolute top-0 right-0 z-10  h-[100vh]  flex   w-full"
-            }
-          >
-            <div
-              className="w-[55%] bg-opacity-[5%] bg-black"
-              onClick={navClick}
-            ></div>
-            <ul className="w-[45%] pl-8 py-10 bg-white">
-              <li className="py-6 text-1xl">
-                <Link onClick={navClick} to="Home" smooth={true} duration={500}>
-                  <span className="cursor-pointer">Home</span>
-                </Link>
-              </li>
-              <li className="py-6 text-1xl">
-                <Link
-                  onClick={navClick}
-                  to="About"
-                  smooth={true}
-                  duration={500}
-                >
-                  <span className="cursor-pointer">About</span>
-                </Link>
-              </li>
-              <li className="py-6 text-1xl">
-                <Link
-                  onClick={navClick}
-                  to="Projects"
-                  smooth={true}
-                  duration={500}
-                >
-                  <span className="cursor-pointer"> Projetcs </span>
-                </Link>
-              </li>
-              <li className="py-6 text-1xl">
-                <Link
-                  onClick={navClick}
-                  to="Contact"
-                  smooth={true}
-                  duration={500}
-                >
-                  <span className="cursor-pointer">Contact</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </Slide>
+            className="w-[55%] bg-opacity-[5%] bg-black"
+            onClick={navClick}
+          ></div>
+          <ul className="w-[45%] pl-8 py-10 bg-white">
+            <li className="py-6 text-1xl">
+              <Link onClick={navClick} to="Home" smooth={true} duration={500}>
+                <span className="cursor-pointer">Home</span>
+              </Link>
+            </li>
+            <li className="py-6 text-1xl">
+              <Link onClick={navClick} to="About" smooth={true} duration={500}>
+                <span className="cursor-pointer">About</span>
+              </Link>
+            </li>
+            <li className="py-6 text-1xl">
+              <Link
+                onClick={navClick}
+                to="Projects"
+                smooth={true}
+                duration={500}
+              >
+                <span className="cursor-pointer"> Projetcs </span>
+              </Link>
+            </li>
+            <li className="py-6 text-1xl">
+              <Link
+                onClick={navClick}
+                to="Contact"
+                smooth={true}
+                duration={500}
+              >
+                <span className="cursor-pointer">Contact</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </header>
     </div>
   );
