@@ -98,7 +98,7 @@ const Home = () => {
             >
               <img src={tailwind} className="tailwind" />
             </div>
-            <div
+            {/* <div
               className="w-[65px] h-[65px] rounded-full bg-white shadow-2xl flex items-center justify-center mr-6"
               title="NODE"
             >
@@ -115,7 +115,7 @@ const Home = () => {
               title="MongoDB"
             >
               <img src={mongo} className="tailwind h-[50px]" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
