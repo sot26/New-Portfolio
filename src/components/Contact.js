@@ -8,12 +8,12 @@ const Contact = () => {
       className="w-full h-full flex justify-center items-center"
       name="Contact"
     >
-      <div className="w-full  h-full py-[100px] px-[20px] lg:px-[50px]">
+      <div className="w-full flex flex-col justify-center items-center  h-full py-[100px] px-[20px] lg:px-[50px]">
         <p className="text-[#147EFB] font-bold text-[17px] mb-[10px] text-center md:text-left">
           CONTACT
         </p>
         <p className="text-[25px] font-bold  text-center md:text-left">
-          Hit me up! 👇
+          Kindly hit me up! 👇
         </p>
         <div className="flex gap-[30px] md:gap-[70px] flex-col md:flex-row mt-[20px] md:mt-[60px]">
           <div className="flex">

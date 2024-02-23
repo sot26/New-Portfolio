@@ -25,6 +25,21 @@ const Portfolio = () => {
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-[30px] md:gap-[50px]">
             <Card
+              className="flex md:p-5 p-2 lg:flex-row-reverse md:gap-[80px] gap-[30px] sm:gap-[45px] flex-col  bg-white rounded-2xl"
+              imgW={commerce}
+              imgM={commerceM}
+              name="E-Commerce Website 🛒 "
+              desc="The E-Commerce website serves as a virtual storefront, allowing users to browse and purchase items conveniently from the comfort of their own homes"
+              //   tool="React"
+              toolCN="hidden"
+              tool1="Redux"
+              tool2="Firebase"
+              tool3CN="py-3 auto flex justify-center items-center shadow-xl px-3"
+              tool3="Stripe"
+              code="https://github.com/sot26/E-commerce"
+              demo="https://sotshop.netlify.app/"
+            />
+            <Card
               className="flex md:p-5 p-2 flex-col lg:flex-row md:gap-[80px] gap-[30px] sm:gap-[45px]  bg-white rounded-2xl"
               imgW={netflix}
               imgM={netflixM}
@@ -50,21 +65,6 @@ const Portfolio = () => {
               title="Coingecko API"
               code="https://github.com/sot26/crypto-tracker"
               demo="https://sot-crypto-tracker.netlify.app/"
-            />
-            <Card
-              className="flex md:p-5 p-2 md:gap-[80px] gap-[30px] sm:gap-[45px] flex-col lg:flex-row  bg-white rounded-2xl"
-              imgW={commerce}
-              imgM={commerceM}
-              name="E-Commerce Website 🛒 "
-              desc="The E-Commerce website serves as a virtual storefront, allowing users to browse and purchase items conveniently from the comfort of their own homes"
-              //   tool="React"
-              toolCN="hidden"
-              tool1="Redux"
-              tool2="Firebase"
-              tool3CN="py-3 auto flex justify-center items-center shadow-xl px-3"
-              tool3="Stripe"
-              code="https://github.com/sot26/E-commerce"
-              demo="https://sotshop.netlify.app/"
             />
           </div>
         </div>

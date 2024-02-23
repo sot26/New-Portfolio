@@ -21,11 +21,11 @@ const Home = () => {
               <p className="w-full ">Front-End React </p>
               <p className="flex h-full w-full items-center justify-center lg:justify-normal mt-[-10px] ">
                 Developer
-                <img
+                {/* <img
                   className="h-[45px] w-auto ml-3"
                   src={hand}
                   alt="waving hand"
-                />
+                /> */}
               </p>
             </div>
             <p className="md:font-medium text-[18px] mb-[25px] ">
