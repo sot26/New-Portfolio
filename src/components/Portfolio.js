@@ -50,7 +50,7 @@ const Portfolio = () => {
               tool1="Tailwind"
               tool2="Firebase"
               code="https://github.com/sot26/Netflix-clone"
-              demo="https://sot-netflix-clone.netlify.app/"
+              demo="https://sot-netflix.netlify.app/"
             />
             <Card
               className="flex md:p-5 p-2 lg:flex-row-reverse flex-col md:gap-[80px] gap-[30px] sm:gap-[45px]  bg-white rounded-2xl"
