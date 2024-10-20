@@ -1,5 +1,4 @@
 import React from "react";
-import hand from "../asset/hand.png";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import me from "../asset/me.png";
 import html from "../asset/html.png";
@@ -7,9 +6,6 @@ import css from "../asset/css.png";
 import js from "../asset/js.png";
 import react from "../asset/react.png";
 import tailwind from "../asset/tailwind.png";
-import mongo from "../asset/mongo.png";
-import express from "../asset/express.png";
-import node from "../asset/node.png";
 
 const Home = () => {
   return (
@@ -21,11 +17,6 @@ const Home = () => {
               <p className="w-full ">Front-End React </p>
               <p className="flex h-full w-full items-center justify-center lg:justify-normal mt-[-10px] ">
                 Developer
-                {/* <img
-                  className="h-[45px] w-auto ml-3"
-                  src={hand}
-                  alt="waving hand"
-                /> */}
               </p>
             </div>
             <p className="md:font-medium text-[18px] mb-[25px] ">

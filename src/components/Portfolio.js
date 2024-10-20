@@ -1,9 +1,9 @@
 import React from "react";
 import netflix from "../asset/netflix.jpg";
-import crypto from "../asset/crypto.jpg";
+import brainwave from "../asset/brainwave.jpg";
 import commerce from "../asset/commerce.jpg";
 import netflixM from "../asset/netflixM.jpg";
-import cryptoM from "../asset/cryptoM.jpg";
+import brainwaveM from "../asset/brainwaveM.jpg";
 import commerceM from "../asset/commerceM.jpg";
 import Card from "./Card";
 
@@ -23,9 +23,9 @@ const Portfolio = () => {
               Every project is a distinct development 🧩
             </p>
           </div>
-          <div className="w-full flex flex-col justify-center items-center gap-[30px] md:gap-[50px]">
+          <div className="w-full flex flex-col justify-center items-center gap-[50px] ">
             <Card
-              className="flex md:p-5 p-2 lg:flex-row-reverse md:gap-[80px] gap-[30px] sm:gap-[45px] flex-col  bg-white rounded-2xl"
+              className="flex md:p-5 p-2 lg:flex-row-reverse md:gap-[50px] gap-[30px] sm:gap-[45px] flex-col justify-center items-center bg-white rounded-2xl"
               imgW={commerce}
               imgM={commerceM}
               name="E-Commerce Website 🛒 "
@@ -40,7 +40,7 @@ const Portfolio = () => {
               demo="https://sotshop.netlify.app/"
             />
             <Card
-              className="flex md:p-5 p-2 flex-col lg:flex-row md:gap-[80px] gap-[30px] sm:gap-[45px]  bg-white rounded-2xl"
+              className="flex md:p-5 p-2 flex-col lg:flex-row md:gap-[50px] gap-[30px] sm:gap-[45px] justify-center items-center  bg-white rounded-2xl"
               imgW={netflix}
               imgM={netflixM}
               name="Netflix Clone 🎥"
@@ -49,20 +49,20 @@ const Portfolio = () => {
               toolCN="py-3 auto flex justify-center items-center shadow-xl px-3"
               tool1="Tailwind"
               tool2="Firebase"
-              code="https://github.com/sot26/Netflix-clone"
-              demo="https://sot-netflix.netlify.app/"
+              code="https://github.com/sot26/Brainwave"
+              demo="https://brainwave-by-sot.netlify.app/"
             />
             <Card
-              className="flex md:p-5 p-2 lg:flex-row-reverse flex-col md:gap-[80px] gap-[30px] sm:gap-[45px]  bg-white rounded-2xl"
-              imgW={crypto}
-              imgM={cryptoM}
-              name="Crypto Price Tracker 🪙 "
-              desc="The crypto price tracker is a tool designed to monitor and track the prices of various cryptocurrencies in real-time."
+              className="flex md:p-5 p-2 lg:flex-row-reverse flex-col md:gap-[50px] gap-[30px] sm:gap-[45px] justify-center items-center  bg-white rounded-2xl"
+              imgW={brainwave}
+              imgM={brainwaveM}
+              name="Brainwave Clone 🧠"
+              desc="Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app."
               tool="React"
               toolCN="py-3 auto flex justify-center items-center shadow-xl px-3"
               tool1="Tailwind"
-              tool2="C.G API"
-              title="Coingecko API"
+              tool2="CSS"
+              title="CSS"
               code="https://github.com/sot26/crypto-tracker"
               demo="https://sot-crypto-tracker.netlify.app/"
             />
