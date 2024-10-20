@@ -49,8 +49,8 @@ const Portfolio = () => {
               toolCN="py-3 auto flex justify-center items-center shadow-xl px-3"
               tool1="Tailwind"
               tool2="Firebase"
-              code="https://github.com/sot26/Brainwave"
-              demo="https://brainwave-by-sot.netlify.app/"
+              code="https://github.com/sot26/Netflix-clone"
+              demo="https://sot-movieclone.netlify.app"
             />
             <Card
               className="flex md:p-5 p-2 lg:flex-row-reverse flex-col md:gap-[50px] gap-[30px] sm:gap-[45px] justify-center items-center  bg-white rounded-2xl"
@@ -63,8 +63,8 @@ const Portfolio = () => {
               tool1="Tailwind"
               tool2="CSS"
               title="CSS"
-              code="https://github.com/sot26/crypto-tracker"
-              demo="https://sot-crypto-tracker.netlify.app/"
+              code="https://github.com/sot26/Brainwave"
+              demo="https://brainwave-by-sot.netlify.app/"
             />
           </div>
         </div>
